@@ -1,185 +1,172 @@
-
 /* Nav Bar */
 .navbar-brand img {
-    margin-right: 5px;
-  }
-  
-  .navbar-brand h1 {
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #212529;
-    margin-left: 10px;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #0d6efd;
-  }
+  margin-right: 5px;
+}
+
+.navbar-brand h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #212529;
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
 
 /* Carrusel */
-  .carousel-container {
-    margin-top: 90px;
-  }
-  
-  .carousel-item {
-    height: auto;
-    text-align: center;
-  }
-  
+.carousel-container {
+  margin-top: 90px;
+}
+
+.carousel-item {
+  height: auto;
+  text-align: center;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  height: 400px;
+  width: auto;
+  max-width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#carouselExampleIndicators {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1000px) {
   .carousel-item img {
     max-height: 500px;
-    height: 400px;
+    height: 1000px;
     width: auto;
     max-width: 100%;
   }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    display: none;
-  }
+}
 
+@media screen and (max-width: 500px) {
+  .carousel-item img {
+    max-height: 500px;
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+  }
   .carousel-caption {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    background-color: none;
     color: #fff;
   }
-
-  #carouselExampleIndicators {
-    margin-bottom: 8px;
+  .carousel-caption h5 {
+    font-size: 9px;
   }
-
-  @media screen and (min-width:1000px) {
-    .carousel-item img {
-        max-height: 500px;
-        height: 1000px;
-        width: auto;
-        max-width: 100%;
-      }
-  } 
-  
-  @media screen and (max-width: 500px) {
-    .carousel-item img {
-        max-height: 500px;
-        height: 200px;
-        width: auto;
-        max-width: 100%;
-      }
-    .carousel-caption{
-        position: absolute;
-        height: 60px;
-        background-color: none;
-        color: #fff;
-      }
-      .carousel-caption h5{
-        font-size: 9px;
-      }
-      .carousel-caption p{
-        font-size: 7px;
-    
-      }
-  } 
-
-  /* Footer */
-  
-  footer {
-    font-size: 1.2rem;
+  .carousel-caption p {
+    font-size: 7px;
   }
+}
 
-  #redes {
-    font-size: 20px;
-  }
+/* Footer */
 
-  footer p {
-    margin-top: 10px;
-    font-size: 8px;
-  }
-  
+footer {
+  font-size: 1.2rem;
+}
+
+#redes {
+  font-size: 20px;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 8px;
+}
+
+footer img {
+  width: 100%;
+  max-width: 60px;
+}
+
+@media (max-width: 576px) {
   footer img {
-    width: 100%;
-    max-width: 60px;
+    height: 20px;
+    margin-top: 0;
+    padding: 0;
   }
-  
-  @media (max-width: 576px) {
-    footer img {
-      height: 20px;
-      margin-top: 0;
-      padding: 0;
-    }
-    footer p {
-        font-size: 8px;
-        margin-top: 10px;
-      }
+  footer p {
+    font-size: 8px;
+    margin-top: 10px;
   }
-  
-  /*Galeria*/
-  .gallery-container {
-    margin-top: 80px;
-  }
+}
 
+/*Galeria*/
+.gallery-container {
+  margin-top: 80px;
+}
 
-  /* Formulario*/
+/* Formulario*/
 
-  .form {
-    margin-top: 80px;
-  }
- 
-  .form-control:focus {
-    box-shadow: none;
-    border-color: #7e5d5d;
-  }
-  
-  .form-control,
-  .btn-primary {
-    border-radius: 0;
-    font-weight: 400;
-  }
-  
-  .form-control::placeholder {
-    color: #a0a0a0;
-  }
-  
-  .form-group label {
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  
-  select.form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 4'><path d='M4 4L0 0h8z'/></svg>") no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 8px 4px;
-  }
-  
-  select.form-control:focus {
-    border-color: #7e5d5d;
-  }
-  
-  .btn-primary {
-    background-color: #7e5d5d;
-    border-color: #7e5d5d;
-  }
-  
-  .btn-primary:hover {
-    background-color: #614040;
-    border-color: #614040;
-  }
-  
-  
-  
-   
-  
-  
- 
-  
-  
-  
+.form {
+  margin-top: 80px;
+}
 
+.form-control:focus {
+  box-shadow: none;
+  border-color: #7e5d5d;
+}
+
+.form-control,
+.btn-primary {
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.form-control::placeholder {
+  color: #a0a0a0;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 4'><path d='M4 4L0 0h8z'/></svg>")
+    no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 8px 4px;
+}
+
+select.form-control:focus {
+  border-color: #7e5d5d;
+}
+
+.btn-primary {
+  background-color: #7e5d5d;
+  border-color: #7e5d5d;
+}
+
+.btn-primary:hover {
+  background-color: #614040;
+  border-color: #614040;
+}
